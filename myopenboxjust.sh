@@ -14,10 +14,10 @@ sudo mkswap /swapfile
 sudo swapon /swapfile
 # xorg display server installation
 sudo apt install -y xorg xbacklight xbindkeys xinput
-#(openbox obconf openbox-menu lxdm lxterminal thunar nitrogen x11-xserver-utils geany firefox-esr
-#arandr synaptic pnmixer pulseaudio gsimplecal xfce4-notifyd xfce4-power-manager picom lxpolkit
-#connman galculator ristretto htop neofetch xarchiver p7zip-full p7zip-rar rar unrar unzip bzip2
-#lzappearance
+#x11-xserver-utils x xinit openbox lxdm lxterminal lxpolkit arandr synaptic
+#htop neofetch xarchiver thunar geany pnmixer pulseaudio ristretto obconf nitrogen file-roller
+#picom connman tint2 firefox-esr gsimplecal xfce4-notifyd xfce4-power-manager
+#galculator  p7zip-full lxappearance gnome-themes-extra
 # PACKAGE INCLUDES build-essential.
 sudo apt install -y build-essential systemctl
 # Microcode for Intel/AMD 
