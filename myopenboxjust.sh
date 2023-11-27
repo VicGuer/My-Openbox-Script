@@ -2,7 +2,7 @@
 # Debian min install
 #hacer esto en una instalacion min debian para bajar el script
 # ufw git
-sudo apt install -y git ufw
+#sudo apt install -y git ufw
 sudo ufw enable
 #git clone https://github.com/drewgrif/openbox_just
 #cd openbox_just
