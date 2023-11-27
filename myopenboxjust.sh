@@ -1,11 +1,11 @@
-# Openbox just
-# Debian min install
-#hacer esto en una instalacion min debian para bajar el script
-# ufw git
-#sudo apt install -y git ufw
+# Debian Devuan clean install
+# http://www.deb-multimedia.org bockworm main non-free
+# http://ftp.debian.org/debian bockworm-backports main non-free
+#sudo apt update -oAcquire::AllowInsecureRepositories=true
+#sudo apt install -y git
 sudo ufw enable
-#git clone https://github.com/drewgrif/openbox_just
-#cd openbox_just
+#git clone https://github.com/VicGuer/my-Openbox-Script
+#cd my-Openbox-Script
 #chmod +x install.sh
 #./install.sh
 sudo dd if=/dev/zero of=/swapfile bs=1M count=512 status=progress
@@ -13,7 +13,11 @@ sudo chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
 # xorg display server installation
-sudo apt install -y xorg xbacklight xbindkeys xinput xinit
+sudo apt install -y xorg xbacklight xbindkeys xinput
+#(openbox obconf openbox-menu lxdm lxterminal thunar nitrogen x11-xserver-utils geany firefox-esr
+#arandr synaptic pnmixer pulseaudio gsimplecal xfce4-notifyd xfce4-power-manager picom lxpolkit
+#connman galculator ristretto htop neofetch xarchiver p7zip-full p7zip-rar rar unrar unzip bzip2
+#lzappearance
 # PACKAGE INCLUDES build-essential.
 sudo apt install -y build-essential systemctl
 # Microcode for Intel/AMD 
