@@ -8,45 +8,15 @@ sudo ufw enable
 #cd my-Openbox-Script
 #chmod +x install.sh
 #./install.sh
-sudo dd if=/dev/zero of=/swapfile bs=1M count=512 status=progress
-sudo chmod 600 /swapfile
-sudo mkswap /swapfile
-sudo swapon /swapfile
-# xorg display server installation
-sudo apt install -y xorg xbacklight xbindkeys xinput
-#x11-xserver-utils x xinit openbox lxdm lxterminal lxpolkit arandr synaptic
-#htop neofetch xarchiver thunar geany pnmixer pulseaudio ristretto obconf nitrogen file-roller
-#picom connman tint2 firefox-esr gsimplecal xfce4-notifyd xfce4-power-manager
-#galculator  p7zip-full lxappearance gnome-themes-extra
-# PACKAGE INCLUDES build-essential.
-sudo apt install -y build-essential systemctl
-# Microcode for Intel/AMD 
-# sudo apt install -y amd64-microcode
-sudo apt install -y intel-microcode 
-# Network File Tools/System Events
-sudo apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends
-sudo systemctl enable avahi-daemon
-sudo systemctl enable acpid
-# Sound packages
-sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa
-# Neofetch/HTOP
-sudo apt install -y neofetch htop geany pcmanfm synaptic
-# Network Manager
-sudo apt install -y connman
-# Installation for Appearance management
-sudo apt install -y lxappearance firefox-esr feh
- # Fonts and icons for now
-sudo apt install -y fonts-firacode fonts-liberation2 fonts-ubuntu papirus-icon-theme gnome-themes-extra
-# Openbox packages
-sudo apt install -y openbox dbus-x11 hsetroot i3lock libnotify-bin lximage-qt menu picom  plank  rofi xfce4-power-manager
+#sudo dd if=/dev/zero of=/swapfile bs=1M count=512 status=progress
+#sudo chmod 600 /swapfile
+#sudo mkswap /swapfile
+#sudo swapon /swapfile
+sudo apt install -y x11-utils xinit openbox lxdm lxpolkit lxrandr synaptic
+sudo apt install -y htop neofetch xarchiver thunar geany pnmixer pulseaudio obconf
+sudo apt install -y nitrogen file-roller picom galculator lxappearance gnome-themes-extra
+sudo apt install -y build-essential systemctl amd64-microcode lxde-core
 
-# LXDM login manager
-#sudo apt install -y lxdm
-#sudo systemctl enable lxdm
-
-# Configuration Setup
-mkdir -p ~/.config/openbox
-cp -a /etc/xdg/openbox/ ~/.config/
 sudo apt autoremove
 
 printf "\e[1;32mNever GiveUP! Reboot Ya.\e[0m\n"
