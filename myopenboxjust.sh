@@ -12,14 +12,13 @@ sudo ufw enable
 #sudo chmod 600 /swapfile
 #sudo mkswap /swapfile
 #sudo swapon /swapfile
-sudo apt install -y x11-utils xinit openbox lxdm lxpolkit lxrandr synaptic
-sudo apt install -y htop neofetch xarchiver thunar geany pnmixer pulseaudio obconf
-sudo apt install -y nitrogen file-roller picom galculator lxappearance gnome-themes-extra
-sudo apt install -y build-essential systemctl amd64-microcode lxde-core
+sudo apt install -y x11-utils xinit openbox lxdm lxpolkit lxrandr lxpanel lxde-core lxde-common
+sudo apt install -y htop neofetch geany pnmixer pulseaudio lxappearance obconf synaptic abyword 
+sudo apt install -y nitrogen galculator gnome-themes-extra firefox-esr 
+sudo apt install -y build-essential amd64-microcode 
 
 sudo apt autoremove
-
-printf "\e[1;32mNever GiveUP! Reboot Ya.\e[0m\n"
+sudo reboot
 
 # despues configurar autostart esta en /etc/xdg/openbox (picom &, plank & feh --bg-fill ~Pictures/wallpaper.png &)
 # lxdm autostart en /etc/lxdm/lxdm.config
